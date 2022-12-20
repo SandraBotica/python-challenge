@@ -1,0 +1,35 @@
+
+Election Results
+Total Votes:
+Candidate name: % votes (total number of votes)
+Winner: Candidate name
+
+Need to separate Ballot ID, 		County, 	Candidate
+Delimiter			','		','
+
+
+
+The total number of votes cast
+
+Count the number of rows 369712 (-1 for titles of columns)
+
+
+A complete list of candidates who received votes
+
+If <> name in Range("C3").value then
+Save new name
+
+
+The percentage of votes each candidate won
+Do this after total number per candidate
+
+Divide each candidates total number by total number of casts vote *100 as a %
+
+
+The total number of votes each candidate won
+
+
+
+The winner of the election based on popular vote
+
+

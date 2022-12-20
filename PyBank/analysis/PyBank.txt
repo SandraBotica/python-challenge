@@ -1,0 +1,58 @@
+
+Financial Analysis
+
+Total months:
+Total: $
+Average Change: $
+Greatest Increase in profits :
+Greatest Decrease in profits :
+
+
+
+Need to separate Month, 	Date, 			profit >0, Losses <0
+Delimiter 		'-' 		','		?????????????????????
+
+
+
+
+The total number of months included in the dataset
+
+Count number of rows 87 (-1 for titles of columns)
+
+count = 0
+
+Count = count +1
+
+
+The net total amount of "Profit/Losses" over the entire period
+
+Sum of profit/losses column (consider positive and negative values)
+
+Profit/Losses  = Range ("B2:lastrow")
+Profits =
+Losses = 
+
+If (Profit/Losses > 0):
+	put into Profits
+Else 
+If (profit/Losses < 0):
+	put into Losses
+End
+
+
+The changes in "Profit/Losses" over the entire period, and then the average of those changes
+
+Find the highest positive value (>0 profit) and highest negative value (<0 loss) then divide by total number of months
+
+
+
+
+The greatest increase in profits (date and amount) over the entire period
+
+Sum of the difference between previous cell to current cell.
+Then if the largest positive >0) value = Greatest Increase in profits
+Else if the largest negative <0 value = Greatest Decrease in profits
+Endif
+
+
+The greatest decrease in profits (date and amount) over the entire period
