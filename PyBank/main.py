@@ -32,33 +32,30 @@ with open(csvpath, newline='') as csvfile:
     csvreader = csv.DictReader (csvfile, delimiter=',')
     
     total_number_months = 0
-    monthly_amount = []
+    # monthly_amount = []
     net_total_amount = 0
-    monthly_change = []
+    # monthly_change = {}
+    # lines = csvfile.readlines()
     
     for row in csvreader:
+        
         total_number_months = total_number_months + 1
-        monthly_amount.append (row['Profit/Losses'])
-        # monthly_change.append (row['Profit/Losses'] + next[monthly_amount])
+        net_total_amount = net_total_amount + int(row['Profit/Losses'])
     
+    print("Financial Analysis")
+    print("_____________________________________")
     print (f"Total months: ", int(total_number_months))
-    print(monthly_amount)
+    print(f"Total: $ ", int(net_total_amount))
+           
+    # for index, line in enumerate(lines[1:]):       
+    #         monthly_change = row['Date'] = row['Profit/Losses'] - (lines[index - 1][row['Profit/Losses']])
+    
+    # print("Financial Analysis")
+    # print("_____________________________________")
+    # print (f"Total months: ", int(total_number_months))
+    # print(f"Total: $ ", int(net_total_amount))
     # print(monthly_change)
     
-    for numbers in monthly_amount:
-        sum = sum + numbers
-            # net_total_amount = net_total_amount + monthly_amount
-
-    print(sum)
-    # print(net_total_amount)
-    
-    # net_total_amount = sum([monthly_amount])
-    # print(net_total_amount)
-    
-    
- 
-        
-
     
     # budgetData = list(csvreader)
     
@@ -67,25 +64,6 @@ with open(csvpath, newline='') as csvfile:
     # for row in csvreader:
     #     net_total_amount = net_total_amount + next(budgetData[0][1])
         
-
-    
-    # net_total_amount = 0
-    
-    # for row in csvreader:
-    #     net_total_amount = net_total_amount + int(row[1])
-          
-    # count = 0
-    # for row in csvreader:
-        # if count == 0:
-            # else:
-                # count += 1
-                # print(f'{count}')
-    
-    # net_total_amount = 0
-    # amount = (item[1])
-    # for amount in csv reader:
-        # append.amount
-        # net_total_amount = sum(item[1])
     
     # monthly_change = 
     # should we be writing this into the csv i.e. row[1] add to next row
